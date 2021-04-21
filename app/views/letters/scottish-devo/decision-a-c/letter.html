@@ -359,10 +359,10 @@
                     <span class="govuk-!-padding-left-8" style="display: inline-block">By care home we mean a home such as a residential care home, a nursing home, a residential college or school or somewhere like this.</span>
                 </li>
                 <li>
-                    If the person you are looking after stops getting:
+                    If the person you are looking after stops getting: 
             
                     <ul class="govuk-list govuk-list--bullet">
-                        <li>Attendance Allowance,</li>
+                        <li>Attendance Allowance, </li>
                         <li>Constant Attendance Allowance, </li>
                         <li>the care component of Disability Living Allowance, </li>
                         <li>Child Disability Payment (Scotland only),</li>
@@ -467,11 +467,29 @@
     </div>
 
 </div>
+<!--
+<div class="vote-button-container {{ 'vote-button-hidden' if data['show-buttons'] != 'true'}}">
+    <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <div class="vote-buttons-wrapper">
+                    <form action="export" class="vote-buttons colour-distinction">
+                        <input id="export-field" type="hidden" name="export-json" value="{{ data['export-json'] }}" />
 
+                        {{ govukButton({ text: 'Makes sense', type: 'button', classes: 'button--good', attributes: { 'onclick': 'javascript:CFObject.voteUp();' } }) }} {{ govukButton({ text: 'Does not make sense', classes:
+                        'govuk-button--warning button--bad', type: 'button', attributes: { 'onclick': 'javascript:CFObject.voteDown();' } }) }}
 
+                        <div class="spacer"></div>
 
+                        {{ govukButton({ text: 'I am finished', type: 'submit', classes: 'govuk-button--secondary' }) }}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-
+-->
 
 
 {% endblock %}

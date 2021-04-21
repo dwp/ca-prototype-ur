@@ -356,8 +356,7 @@
             <br>
             <span class="govuk-!-padding-left-8" style="display: inline-block">By care home we mean a home such as a residential care home, a nursing home, a residential college or school or somewhere like this.</span>
         </li>
-        <li>If the person you are looking after stops getting a qualifying disability benefit, or if the rate of their benefit is reduced. You can find the list of qualifying disability benefits for Carer’s Allowance at 
-            <br>www.gov.uk/carers-allowance/eligibility.</li>
+        <li>If the person you are looking after stops getting a qualifying disability benefit, or if the rate of their benefit is reduced. You can find the list of qualifying disability benefits for Carer’s Allowance at <nobr>www.gov.uk/carers-allowance/eligibility.<nobr></li>
         <li>If the disabled person you look after dies. </li>
         <li>You start work as an employed or self-employed person, either full-time or part-time, temporary or casual, whatever your earnings.</li>
         <li>If you are appointed as a director or you start to receive director's fees or earned income relief on your husband's, wife's or civil partner's self-employment.</li>
@@ -450,8 +449,29 @@
 </div>
 
 </div>
+<!--
+<div class="vote-button-container {{ 'vote-button-hidden' if data['show-buttons'] != 'true'}}">
+<div class="govuk-width-container">
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <div class="vote-buttons-wrapper">
+            <form action="export" class="vote-buttons colour-distinction">
+                <input id="export-field" type="hidden" name="export-json" value="{{ data['export-json'] }}" />
 
+                {{ govukButton({ text: 'Makes sense', type: 'button', classes: 'button--good', attributes: { 'onclick': 'javascript:CFObject.voteUp();' } }) }} {{ govukButton({ text: 'Does not make sense', classes:
+                'govuk-button--warning button--bad', type: 'button', attributes: { 'onclick': 'javascript:CFObject.voteDown();' } }) }}
 
+                <div class="spacer"></div>
+
+                {{ govukButton({ text: 'I am finished', type: 'submit', classes: 'govuk-button--secondary' }) }}
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+-->
 
 
 {% endblock %}
